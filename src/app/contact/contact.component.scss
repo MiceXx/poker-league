@@ -1,0 +1,151 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+
+#social {
+    margin: 20px 10px;
+    text-align: center;
+  }
+  
+  .smGlobalBtn{ /* global button class */
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      box-shadow: 0 2px 2px #999;
+      padding: 0px;
+      text-decoration: none;
+      text-align: center;
+      color: #fff;
+      font-size: 25px;
+      font-weight: normal;
+      line-height: 2em;
+      border-radius: 25px;
+      -moz-border-radius:25px;
+      -webkit-border-radius:25px;
+  }
+
+.contact-card-container {
+  padding: 15px;
+}
+.contact-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  li{
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    background-color: wheat;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    font-size: 0.9em;
+    text-align: center;
+
+    &:focus,
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+        max-width: 150px;
+        float: left;
+        border-radius: 50%;
+    }
+
+    .contact-card-details {
+        float: left;
+        text-align: left;
+        min-width: 250px;
+        padding: 0 15px 0 35px;
+
+        h1{
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+        h2{
+            font-size: 16px;
+            color: black;
+        }
+
+        span, a{
+            display: block;
+            margin-bottom: 15px;
+            text-decoration: none;
+            position: relative;
+        }
+    }
+  }
+}
+@media (max-width: 550px) {
+    .contact-cards {
+        li {
+            display: block;
+            width: auto;
+            max-width: 200px;
+            margin: 30px auto;
+
+            img{
+                float: none;
+                margin: 0 auto;
+            }
+
+            .contact-card-details{
+                float: none;
+            }
+
+        .contact-card-details {
+            margin-top: 20px;
+            text-align: center;
+            min-width: 0;
+
+            span,a {
+                padding: 0;
+                white-space: break-all;
+                word-wrap: break-word;
+            }
+        }
+
+        }
+    }
+}
+
+
+  
+  /* facebook button class*/
+  .facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+}
+
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+}
+
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+}
+
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #fff;
+}

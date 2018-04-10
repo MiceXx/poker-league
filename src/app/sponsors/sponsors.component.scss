@@ -1,0 +1,60 @@
+$text-color: black;
+
+.sponsor-container{
+    padding:1em;
+    margin: 1em auto;
+    background:#fff;
+	border-radius: 5px;
+    box-shadow: 9px 7px 40px -6px rgba(0,0,0,0.25);
+}
+
+
+h1,h2{
+    margin-top: 1em;
+    text-align: center;
+    font-weight: bold;
+    color: $text-color;
+}
+
+p{
+    color: $text-color;
+    text-align: center;
+}
+
+#sponsors{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+    padding-left: 0;
+    text-align: center;
+    list-style-type: none;
+
+    @media (min-width: 40em) {
+        margin-left: 7vw;
+        margin-right:7vw;
+    }
+
+    a{
+        text-decoration: none;
+        display: block;
+        color: $text-color;
+        padding: 2em;
+
+        &:focus,
+        &:hover {
+          text-decoration: underline;
+          font-weight: bold;
+          transform: scale(1.2);
+        }
+    }
+
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 15vw;
+        max-height: 15vw;
+    }
+}

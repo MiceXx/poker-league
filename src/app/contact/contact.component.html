@@ -1,0 +1,21 @@
+
+
+<div class="contact-card-container">
+    <ul class="contact-cards">
+      <li *ngFor="let contact of contactList">
+        <a href="mailto:{{ contact.email }}">
+          <img src="/assets/contacts/{{ contact.image }}"/>
+          <div class="contact-card-details">
+            <h1 class="contact-card-name">{{ contact.name }}</h1>
+            <h2 class="contact-card-title">{{ contact.title }}</h2>
+            <a class="contact-card-phone" href="tel:{{ contact.phone }}">{{ contact.phone }}</a>
+            <a class="contact-card-email" href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+<div id="social"><a class="facebookBtn smGlobalBtn" href="https://www.facebook.com/groups/167645219934918/" ></a>
+  <a class="twitterBtn smGlobalBtn" href="#" ></a>
+</div>

@@ -1,0 +1,88 @@
+.carousel-container{
+  margin: 0 0 2em 0;
+}
+
+.item{
+  background: linear-gradient(-90deg, rgb(53, 53, 53),grey, rgb(53, 53, 53));
+}
+
+
+.carousel-img{
+  display: block;
+  margin: 0 auto;
+  min-height: 430px;
+  max-height: 430px;
+  box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.8), -12px 0 8px -4px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption *{
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
+}
+
+.gallery-container{
+    padding:2em;
+    margin: 2em auto;
+    text-align: center;
+}
+
+.gallery-name-block{
+    text-align: center;
+    margin-top:1em;
+    span{
+        display: inline-block;
+        font-weight: bold;
+        white-space: nowrap;
+        color: black;
+    }
+}
+
+  .gallery {
+    margin: 10px;
+    list-style-type: none;
+    padding: 0;
+
+    li{
+        display: inline-block;
+        position: relative;
+        width: 20%;
+        margin: 2em;
+    }
+
+
+  }
+
+  .gallery a img {
+    display: block;
+    margin: auto;
+    z-index: -1;
+  }
+    
+  
+  @media only screen and (max-width: 740px) {
+    /* 3 tiles */
+    .gallery li {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+    }
+  }
+  @media only screen and (max-width: 540px) {
+    /* 2 tiles */
+    .gallery li {
+      width: 50%;
+      padding-bottom: 50%;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    /* 1 tile */
+    .gallery li {
+      width: 100%;
+      padding-bottom: 100%;
+    }
+  }
